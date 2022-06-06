@@ -19,11 +19,11 @@ namespace la_mia_pizzeria_static.Models
         public string Descrizione { get; set; }
        
         public string? sFoto { get; set; }
-        [Required(ErrorMessage = "Il campo è obbligatorio")]
 
+
+        [Required(ErrorMessage = "Il campo è obbligatorio")]
         [Range(1, 20)]
         public double Prezzo { get; set; }
-        [Required(ErrorMessage = "Il campo è obbligatorio")]
 
         public IFormFile Foto { get; set; }
 
